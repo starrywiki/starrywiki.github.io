@@ -4,20 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <base target="_blank">
-  <title>Visitor map</title>
+  <title>Views</title>
   <style>
     html, body { margin: 0; padding: 0; background: #fff; color: #6d737c; font: 14px/1.5 Arial, sans-serif; }
-    img, iframe, canvas { display: block; max-width: 100%; border: 0; }
-    img { height: auto; }
-    a { color: #245c92; }
+    #views-count { margin: 0 0 7px; }
+    #visitor-map-image { display: block; width: 100%; height: auto; }
+    #visitor-map-image[hidden] { display: none; }
+    #visitor-source { position: absolute; left: -10000px; top: 0; width: 220px; visibility: hidden; pointer-events: none; }
   </style>
+  <script src="scripts/visitor-map.js" defer></script>
 </head>
 <body>
-  <!-- Keep the supplied provider script inside the body. A separate frame lets the homepage load independently of this service. -->
-  <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=krCJyW10zZBSX62WNkBTEaiTQ-XwxBV21vLOmRqwMG4&amp;cl=d8dfe6&amp;w=a&amp;co=ffffff&amp;cmo=e34b4b&amp;cmn=e34b4b&amp;ct=6d737c"></script>
-  <noscript>
-    <a href="https://mapmyvisitors.com/web/1c9kn" rel="noopener noreferrer" title="View visitor statistics"><img src="https://mapmyvisitors.com/map.png?d=krCJyW10zZBSX62WNkBTEaiTQ-XwxBV21vLOmRqwMG4&amp;cl=d8dfe6&amp;co=ffffff&amp;cmo=e34b4b&amp;cmn=e34b4b&amp;ct=6d737c" width="220" alt="Visitor map and visit counter"></a>
-  </noscript>
+  <p id="views-count">Views</p>
+  <img id="visitor-map-image" width="220" height="108" alt="Static world map of visitor regions" draggable="false" hidden>
+  <!-- The provider records one visit. Only its final static map and actual total are displayed. -->
+  <div id="visitor-source" aria-hidden="true" inert>
+    <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=krCJyW10zZBSX62WNkBTEaiTQ-XwxBV21vLOmRqwMG4&amp;cl=d8dfe6&amp;w=220&amp;t=tt&amp;co=ffffff&amp;cmo=e34b4b&amp;cmn=e34b4b&amp;ct=6d737c"></script>
+  </div>
 </body>
 </html>
