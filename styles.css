@@ -45,6 +45,11 @@ svg { flex: 0 0 auto; }
 .social-links svg { width: 20px; height: 20px; }
 .social-links > a:hover { color: var(--link); text-decoration: none; }
 .social-links > a:hover span { text-decoration: underline; }
+.visitor-map { max-width: 220px; margin: 24px 0 0; padding-top: 16px; border-top: 1px solid var(--rule); }
+.visitor-map h2 { margin: 0 0 10px; color: var(--muted); font-family: var(--font-ui); font-size: 14px; font-weight: 500; letter-spacing: 0; }
+.visitor-map-widget { width: 100%; }
+.visitor-map-widget img, .visitor-map-widget iframe, .visitor-map-widget canvas { max-width: 100%; }
+.visitor-map-widget img { height: auto; }
 
 main { margin-left: 300px; padding: 54px 0 24px; min-width: 0; }
 main:focus { outline: none; }
@@ -55,6 +60,11 @@ section { margin-bottom: 41px; }
 h2 { color: var(--heading); font-family: var(--font-heading); font-size: 27px; font-weight: 700; line-height: 1.35; letter-spacing: -.5px; margin: 0 0 18px; }
 .profile-link { font-weight: 700; }
 .org-icon { display: inline-block; width: 1.16em; height: 1.16em; object-fit: contain; vertical-align: -.16em; }
+.org-icon--zhiyuan {
+  background-color: var(--link);
+  -webkit-mask: url("assets/logos/zhiyuan.png") -.13em -.53em / 10.85em auto no-repeat;
+  mask: url("assets/logos/zhiyuan.png") -.13em -.53em / 10.85em auto no-repeat;
+}
 .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; margin-bottom: 18px; }
 .section-heading h2 { margin: 0; }
 .contribution-note { color: var(--muted); font-family: var(--font-ui); font-size: 14px; white-space: nowrap; }
@@ -106,6 +116,16 @@ html:has(.figure-dialog[open]) { overflow: hidden; }
 @media (min-width: 1500px) {
   .page-layout { width: 1160px; }
   main { margin-left: 320px; }
+}
+
+@media (min-width: 761px) and (max-height: 780px) {
+  .profile-sidebar:has(.visitor-map:not([hidden])) { top: 28px; bottom: 12px; }
+  .profile-sidebar:has(.visitor-map:not([hidden])) .portrait { width: 130px; height: 156px; margin-bottom: 16px; }
+  .profile-sidebar:has(.visitor-map:not([hidden])) .profile-details h1 { font-size: 27px; }
+  .profile-sidebar:has(.visitor-map:not([hidden])) .profile-details h1 span { font-size: 20px; }
+  .profile-sidebar:has(.visitor-map:not([hidden])) .social-links { margin-top: 12px; gap: 0; }
+  .profile-sidebar:has(.visitor-map:not([hidden])) .social-links > a { min-height: 32px; }
+  .visitor-map { margin-top: 16px; padding-top: 12px; }
 }
 
 @media (max-width: 1050px) {

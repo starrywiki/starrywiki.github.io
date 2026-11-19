@@ -12,7 +12,7 @@
   <meta property="og:image" content="https://starrywiki.github.io/assets/portrait.png">
   <link rel="canonical" href="https://starrywiki.github.io/">
   <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
   <script src="scripts/figures.js" defer></script>
   <title>Anqi Li | Homepage</title>
 </head>
@@ -60,6 +60,11 @@
         <a href="https://www.linkedin.com/in/anqi-li-826872384/" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#icon-linkedin"/></svg><span>LinkedIn</span></a>
         <a href="assets/Anqi_Li_CV.pdf" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#icon-cv"/></svg><span>CV</span></a>
       </nav>
+      <!-- Enable after inserting the site's verified visitor-map embed code. -->
+      <section class="visitor-map" aria-labelledby="visitor-map-title" hidden>
+        <h2 id="visitor-map-title">Visitors</h2>
+        <div class="visitor-map-widget" id="visitor-map-widget"></div>
+      </section>
     </aside>
 
     <main id="main" tabindex="-1">
@@ -72,14 +77,14 @@
 
       <section id="about" aria-labelledby="about-title">
         <h2 id="about-title">About Me</h2>
-        <p>I am <strong>Anqi Li</strong> (<span lang="zh-Hans">李安琪</span>), an undergraduate studying Computer Science and Technology at <img class="org-icon" src="assets/logos/sjtu.ico" width="22" height="22" alt="" aria-hidden="true"> <a class="profile-link" href="https://en.sjtu.edu.cn/" target="_blank" rel="noopener noreferrer">Shanghai Jiao Tong University</a>, where I am part of the Zhiyuan Honors Program (JOHN Class). I expect to graduate in June 2028.</p>
-        <p>I am currently a research intern at <img class="org-icon" src="assets/logos/microsoft.svg" width="20" height="20" alt="" aria-hidden="true"> <a class="profile-link" href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/" target="_blank" rel="noopener noreferrer">Microsoft Research Asia</a>, advised by <a class="profile-link" href="https://www.microsoft.com/en-us/research/people/yuhanghe/" target="_blank" rel="noopener noreferrer">Yuhang He</a> and mentored by Hui Xue, working on multi-agent automated research and synthetic-data strategies. I also conduct research in <a class="profile-link" href="https://yulunzhang.com/" target="_blank" rel="noopener noreferrer">Yulun Zhang</a>’s group at <a class="profile-link" href="https://en.sjtu.edu.cn/" target="_blank" rel="noopener noreferrer">SJTU</a>, focusing on efficient vision-language model inference and multimodal reasoning.</p>
-        <p>I am interested in making multimodal AI more efficient, capable, and practical. Feel free to reach out at <a href="mailto:starrywiki@sjtu.edu.cn">starrywiki@sjtu.edu.cn</a>.</p>
+        <p>I am <strong>Anqi Li</strong> (<span lang="zh-Hans">李安琪</span>), an undergraduate studying Computer Science and Technology at <a class="profile-link" href="https://en.sjtu.edu.cn/" target="_blank" rel="noopener noreferrer"><img class="org-icon" src="assets/logos/sjtu.ico" width="22" height="22" alt="" aria-hidden="true"> Shanghai Jiao Tong University</a>, where I am part of the <a class="profile-link" href="https://en.zhiyuan.sjtu.edu.cn/en/about/overview" target="_blank" rel="noopener noreferrer"><span class="org-icon org-icon--zhiyuan" aria-hidden="true"></span> Zhiyuan Honors Program</a> (JOHN Class). I expect to graduate in June 2028.</p>
+        <p>I am currently a research intern at <a class="profile-link" href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/" target="_blank" rel="noopener noreferrer"><img class="org-icon" src="assets/logos/microsoft.svg" width="20" height="20" alt="" aria-hidden="true"> Microsoft Research Asia</a>, advised by <a class="profile-link" href="https://www.microsoft.com/en-us/research/people/yuhanghe/" target="_blank" rel="noopener noreferrer">Yuhang He</a> and mentored by <a class="profile-link" href="https://www.microsoft.com/en-us/research/people/xuehui/" target="_blank" rel="noopener noreferrer">Hui Xue</a>, working on multi-agent automated research and synthetic-data strategies. I also conduct research in <a class="profile-link" href="https://yulunzhang.com/" target="_blank" rel="noopener noreferrer">Yulun Zhang</a>’s group at <a class="profile-link" href="https://en.sjtu.edu.cn/" target="_blank" rel="noopener noreferrer"><img class="org-icon" src="assets/logos/sjtu.ico" width="22" height="22" alt="" aria-hidden="true"> SJTU</a>, focusing on efficient vision-language model inference and multimodal reasoning.</p>
+        <p>Feel free to <a class="profile-link" href="mailto:starrywiki@sjtu.edu.cn">reach out</a>.</p>
       </section>
 
       <section id="research" aria-labelledby="research-title">
         <h2 id="research-title">Research Interests</h2>
-        <p>My research interests lie in <strong>multimodal intelligence</strong>, <strong>AI agents</strong>, and <strong>data-centric AI</strong>. I am particularly interested in efficient vision-language models and multimodal reasoning, multi-agent systems for automated research, and synthetic data generation and evaluation. My goal is to build capable and efficient AI systems through better models, agents, and data.</p>
+        <p>My research interests lie in <strong>multimodal intelligence</strong>, <strong>AI agents</strong>, and <strong>recursive self-improvement (RSI)</strong>. I am particularly interested in efficient vision-language models and multimodal reasoning, multi-agent systems for automated research, and data synthesis and evaluation for iterative self-improvement. My goal is to build capable and efficient AI systems through better models, agents, and data.</p>
       </section>
 
       <section id="publications" aria-labelledby="publications-title">
@@ -133,12 +138,12 @@
         <div class="background-group">
           <h3 class="subsection-title">Internship</h3>
           <article class="experience">
-            <div class="entry-heading"><h4>Microsoft Research Asia</h4><span class="date">Jun. 2026 – Dec. 2026</span></div>
-            <p class="entry-subtitle">Research Intern · Advisor: <a href="https://www.microsoft.com/en-us/research/people/yuhanghe/" target="_blank" rel="noopener noreferrer">Yuhang He</a> · Mentor: Hui Xue</p>
+            <div class="entry-heading"><h4><a class="profile-link" href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/" target="_blank" rel="noopener noreferrer"><img class="org-icon" src="assets/logos/microsoft.svg" width="20" height="20" alt="" aria-hidden="true"> Microsoft Research Asia</a></h4><span class="date">Jun. 2026 – Dec. 2026</span></div>
+            <p class="entry-subtitle">Research Intern · Advisor: <a class="profile-link" href="https://www.microsoft.com/en-us/research/people/yuhanghe/" target="_blank" rel="noopener noreferrer">Yuhang He</a> · Mentor: <a class="profile-link" href="https://www.microsoft.com/en-us/research/people/xuehui/" target="_blank" rel="noopener noreferrer">Hui Xue</a></p>
             <p>Multi-agent automated research for synthetic data, from hypothesis generation and data synthesis to model training, evaluation, and iterative strategy optimization.</p>
           </article>
           <article class="experience">
-            <div class="entry-heading"><h4>Yulun Zhang’s Group, SJTU</h4><span class="date">Mar. 2026 – Present</span></div>
+            <div class="entry-heading"><h4><a class="profile-link" href="https://yulunzhang.com/" target="_blank" rel="noopener noreferrer">Yulun Zhang</a>’s Group, <a class="profile-link" href="https://en.sjtu.edu.cn/" target="_blank" rel="noopener noreferrer"><img class="org-icon" src="assets/logos/sjtu.ico" width="22" height="22" alt="" aria-hidden="true"> SJTU</a></h4><span class="date">Mar. 2026 – Present</span></div>
             <p class="entry-subtitle">Research Intern · Efficient Vision-Language Model Inference</p>
             <p>Efficient VLM inference for complex multimodal reasoning, with a focus on reasoning token control and efficiency–performance trade-offs.</p>
           </article>
@@ -147,20 +152,20 @@
         <div class="background-group">
           <h3 class="subsection-title">Education</h3>
           <article class="experience">
-            <div class="entry-heading"><h4>Shanghai Jiao Tong University</h4><span class="date">Expected Jun. 2028</span></div>
+            <div class="entry-heading"><h4><a class="profile-link" href="https://en.sjtu.edu.cn/" target="_blank" rel="noopener noreferrer"><img class="org-icon" src="assets/logos/sjtu.ico" width="22" height="22" alt="" aria-hidden="true"> Shanghai Jiao Tong University</a></h4><span class="date">Expected Jun. 2028</span></div>
             <p class="entry-subtitle">Bachelor of Computer Science and Technology</p>
-            <p>Zhiyuan Honors Program, JOHN Class.</p>
+            <p><a class="profile-link" href="https://en.zhiyuan.sjtu.edu.cn/en/about/overview" target="_blank" rel="noopener noreferrer"><span class="org-icon org-icon--zhiyuan" aria-hidden="true"></span> Zhiyuan Honors Program</a>, JOHN Class.</p>
           </article>
         </div>
 
         <div class="background-group">
           <h3 class="subsection-title">Honors</h3>
           <ul class="honors-list">
-            <li><div><strong>Zhiyuan Honor Scholarship</strong> <span class="honor-detail">(top 5%), Zhiyuan College</span></div><span class="date">2024–2025; 2025–2026</span></li>
-            <li><div><strong>Undergraduate Excellence Scholarship</strong><span class="honor-detail">, SJTU</span></div><span class="date">2024–2025</span></li>
-            <li><div><strong>Outstanding Student Award</strong><span class="honor-detail">, SJTU</span></div><span class="date">2024–2025</span></li>
+            <li><div><strong>Zhiyuan Honor Scholarship</strong> <span class="honor-detail">(top 5%), <a class="profile-link" href="https://en.zhiyuan.sjtu.edu.cn/" target="_blank" rel="noopener noreferrer"><span class="org-icon org-icon--zhiyuan" aria-hidden="true"></span> Zhiyuan College</a></span></div><span class="date">2024–2025; 2025–2026</span></li>
+            <li><div><strong>Undergraduate Excellence Scholarship</strong><span class="honor-detail">, <a class="profile-link" href="https://en.sjtu.edu.cn/" target="_blank" rel="noopener noreferrer"><img class="org-icon" src="assets/logos/sjtu.ico" width="22" height="22" alt="" aria-hidden="true"> SJTU</a></span></div><span class="date">2024–2025</span></li>
+            <li><div><strong>Outstanding Student Award</strong><span class="honor-detail">, <a class="profile-link" href="https://en.sjtu.edu.cn/" target="_blank" rel="noopener noreferrer"><img class="org-icon" src="assets/logos/sjtu.ico" width="22" height="22" alt="" aria-hidden="true"> SJTU</a></span></div><span class="date">2024–2025</span></li>
           </ul>
-          <p class="research-program"><strong>Chun-Tsung Undergraduate Research Program</strong>, SJTU <span class="honor-detail">· Ongoing; midterm defense passed</span></p>
+          <p class="research-program"><strong>Chun-Tsung Undergraduate Research Program</strong>, <a class="profile-link" href="https://en.sjtu.edu.cn/" target="_blank" rel="noopener noreferrer"><img class="org-icon" src="assets/logos/sjtu.ico" width="22" height="22" alt="" aria-hidden="true"> SJTU</a> <span class="honor-detail">· Ongoing; midterm defense passed</span></p>
         </div>
       </section>
 

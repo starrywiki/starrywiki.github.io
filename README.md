@@ -39,6 +39,14 @@
 
 复制一个 `li.publication` 后修改主图、标题、作者、会议、PDF 和 Code 链接。本人姓名用 `strong` 加粗，共同第一作者用星号标注。主图链接中的 `data-figure` 用于放大视图的标题。
 
+### 访客地图
+
+左栏 CV 下方已预留 `.visitor-map`，在得到属于本站的真实访客统计嵌入代码前保持隐藏，不显示示例计数或模拟地区。
+
+可在 <https://mapmyvisitors.com/add> 为 `https://starrywiki.github.io/` 生成地图代码，选择白色背景、红色标记和小尺寸地图。将生成的代码加入 `#visitor-map-widget`，再移除 `.visitor-map` 的 `hidden` 属性。地图和访问量从启用后开始累计，不能补回此前未记录的访问。不要使用其他网站的统计 ID。
+
+地图使用第三方统计服务；地区来自 IP 的大致定位。该服务未接入前，本站不会加载其统计脚本。
+
 ## 本地预览
 
 在此文件夹运行：
@@ -58,6 +66,7 @@ GitHub Pages 使用 `main` 分支根目录。将修改提交并推送到 `main` 
 ### 图片来源
 
 - 上海交通大学标识：学校官网 <https://en.sjtu.edu.cn/favicon.ico>。
+- 致远学院标识：学院官网 <https://en.zhiyuan.sjtu.edu.cn/assets/home/images/logoWhite.png>，通过 CSS 显示其校徽部分。
 - Microsoft 标识：本地 SVG，作为机构链接的视觉标识。
 - TwinPrune 主图：<https://github.com/Kai-Liu001/TwinPrune/blob/main/docs/assets/twinprune_method.png>。
 - DRScaffold 主图：<https://github.com/irene-shi/DRScaffold/blob/main/figs/teaser.png>。
