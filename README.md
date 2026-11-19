@@ -39,7 +39,7 @@
 
 ### 修改头像构图
 
-`styles.css` 顶部的 `--portrait-zoom` 控制照片放大比例，`--portrait-focus-x` / `--portrait-focus-y` 控制取景中心。图片本身保留原样；当前以脸部中心取景，保留少量头部空间、肩部与花朵。
+`styles.css` 顶部的 `--portrait-zoom` 控制照片放大比例，`--portrait-focus-x` / `--portrait-focus-y` 控制取景中心。图片本身保留原样；当前使用圆形取景框，缩小脸部占比并以脸部中心取景，保留头发、肩部与花朵。桌面端左栏顶部与 About Me 标题对齐。
 
 ### 论文
 
