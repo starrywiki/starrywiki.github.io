@@ -12,8 +12,9 @@
   <meta property="og:image" content="https://starrywiki.github.io/assets/portrait.jpg">
   <link rel="canonical" href="https://starrywiki.github.io/">
   <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=7">
   <script src="scripts/figures.js" defer></script>
+  <script src="scripts/profile.js" defer></script>
   <title>Anqi Li | Homepage</title>
 </head>
 <body>
@@ -36,6 +37,11 @@
     <symbol id="icon-pdf" viewBox="0 0 24 24">
       <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10V4a2 2 0 0 1 2-2h7l5 5v3M14 2v5h5M3 21v-8h2a2 2 0 0 1 0 4H3M10 13v8h1.5a2.5 2.5 0 0 0 2.5-2.5v-3a2.5 2.5 0 0 0-2.5-2.5H10ZM18 21v-8h4M18 17h3"/></g>
     </symbol>
+    <symbol id="icon-wechat" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M9.3 2C4.7 2 1 5 1 8.7c0 2.1 1.2 4 3.1 5.2l-.8 2.5 3-1.5c.9.3 1.9.4 3 .4h.5a6.7 6.7 0 0 1-.4-2.2c0-3.5 3.3-6.4 7.4-6.4h.4C16 4 12.9 2 9.3 2Z"/>
+      <path fill="currentColor" d="M16.7 7.9c-3.5 0-6.3 2.3-6.3 5.2s2.8 5.3 6.3 5.3c.8 0 1.6-.1 2.3-.4l2.3 1.3-.6-2a4.9 4.9 0 0 0 2.3-4.2c0-2.9-2.8-5.2-6.3-5.2Z"/>
+      <g fill="#fff"><circle cx="6.5" cy="7" r=".9"/><circle cx="11.6" cy="7" r=".9"/><circle cx="14.5" cy="12" r=".75"/><circle cx="18.9" cy="12" r=".75"/></g>
+    </symbol>
     <symbol id="icon-zoom" viewBox="0 0 24 24">
       <g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 6 6M7 10h6M10 7v6"/></g>
     </symbol>
@@ -46,6 +52,7 @@
 
   <div class="page-layout">
     <aside class="profile-sidebar" aria-label="Profile and contact links">
+      <div class="profile-card">
       <div class="profile-heading">
         <div class="portrait"><img class="portrait-photo" src="assets/portrait.jpg" width="1920" height="2880" alt="Anqi Li among purple flowers"></div>
         <div class="profile-details">
@@ -58,8 +65,10 @@
         <a href="mailto:starrywiki@sjtu.edu.cn"><svg aria-hidden="true"><use href="#icon-email"/></svg><span>Email</span></a>
         <a href="https://scholar.google.com/citations?user=a7ResPcAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#icon-scholar"/></svg><span>Google Scholar</span></a>
         <a href="https://www.linkedin.com/in/anqi-li-826872384/" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#icon-linkedin"/></svg><span>LinkedIn</span></a>
+        <button type="button" class="wechat-copy" data-wechat="wikistarry" aria-label="Copy WeChat ID wikistarry"><svg aria-hidden="true"><use href="#icon-wechat"/></svg><span>WeChat</span></button>
         <a href="assets/Anqi_Li_CV.pdf" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#icon-cv"/></svg><span>CV</span></a>
       </nav>
+      </div>
       <section class="visitor-map" aria-label="Website views">
         <div class="visitor-map-widget" id="visitor-map-widget">
           <iframe class="visitor-map-frame" src="visitor-map.html?v=static" title="Views and a static visitor map" width="220" height="138" loading="eager" referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -179,5 +188,6 @@
     </div>
     <img class="expanded-figure" alt="">
   </dialog>
+  <div class="wechat-copy-feedback" id="wechat-copy-feedback" role="status" aria-live="polite" hidden></div>
 </body>
 </html>

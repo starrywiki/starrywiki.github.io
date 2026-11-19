@@ -12,6 +12,7 @@
 - `assets/Anqi_Li_CV.pdf`：本人提供的原始简历，左侧 CV 直接打开此文件。
 - `assets/publications/`：论文主图。
 - `scripts/figures.js`：点击论文主图后弹出放大视图，可按 Esc 或点击 Close 关闭。
+- `scripts/profile.js`：点击 WeChat 复制 `wikistarry`，显示复制成功提示。
 - `visitor-map.html`：隔离加载访客统计服务，仅显示访问总数和静态地图。
 - `scripts/visitor-map.js`：保留服务商的实际数值和地区，将地图转换为不可点击的静态 SVG 图片。
 
@@ -39,7 +40,7 @@
 
 ### 修改头像构图
 
-`styles.css` 顶部的 `--portrait-zoom` 控制照片放大比例，`--portrait-focus-x` / `--portrait-focus-y` 控制取景中心。图片本身保留原样；当前使用圆形取景框，缩小脸部占比并以脸部中心取景，保留头发、肩部与花朵。桌面端左栏顶部与 About Me 标题对齐。
+`styles.css` 顶部的 `--portrait-size` 控制圆形头像直径，`--portrait-zoom` 控制照片放大比例，`--portrait-focus-x` / `--portrait-focus-y` 控制取景中心。图片本身保留原样；当前以脸部中心取景，保留头发、肩部与花朵。桌面端姓名和社交链接组在头像下方居中，左栏顶部与 About Me 标题对齐。
 
 ### 论文
 
