@@ -48,6 +48,8 @@ svg { flex: 0 0 auto; }
 .visitor-map { max-width: 220px; margin: 24px 0 0; padding-top: 16px; border-top: 1px solid var(--rule); }
 .visitor-map h2 { margin: 0 0 10px; color: var(--muted); font-family: var(--font-ui); font-size: 14px; font-weight: 500; letter-spacing: 0; }
 .visitor-map-widget { width: 100%; }
+.visitor-map-frame { display: block; width: 100%; height: 160px; border: 0; }
+.visitor-statistics { display: inline-block; margin-top: 5px; font-size: 13px; line-height: 1.5; }
 .visitor-map-widget img, .visitor-map-widget iframe, .visitor-map-widget canvas { max-width: 100%; }
 .visitor-map-widget img { height: auto; }
 
