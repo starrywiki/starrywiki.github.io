@@ -6,14 +6,15 @@
   <meta name="description" content="Anqi Li (李安琪), undergraduate at Shanghai Jiao Tong University. Research in efficient vision-language models, multimodal reasoning, and AI systems.">
   <meta name="theme-color" content="#ffffff">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Anqi Li 李安琪">
+  <meta property="og:title" content="Anqi Li | Homepage">
   <meta property="og:description" content="Undergraduate at SJTU. Efficient vision-language models, multimodal reasoning, and AI systems.">
   <meta property="og:url" content="https://starrywiki.github.io/">
   <meta property="og:image" content="https://starrywiki.github.io/assets/portrait.png">
   <link rel="canonical" href="https://starrywiki.github.io/">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <title>Anqi Li 李安琪</title>
+  <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script src="scripts/figures.js" defer></script>
+  <title>Anqi Li | Homepage</title>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -32,8 +33,11 @@
     <symbol id="icon-linkedin" viewBox="0 0 24 24">
       <path fill="currentColor" d="M20.5 1.5h-17a2 2 0 0 0-2 2v17a2 2 0 0 0 2 2h17a2 2 0 0 0 2-2v-17a2 2 0 0 0-2-2ZM8 19H4.8V9.4H8V19ZM6.4 8.1a1.85 1.85 0 1 1 0-3.7 1.85 1.85 0 0 1 0 3.7ZM19.2 19H16v-4.7c0-1.1-.02-2.5-1.54-2.5-1.55 0-1.79 1.2-1.79 2.42V19H9.5V9.4h3.04v1.31h.04c.42-.8 1.46-1.64 3-1.64 3.21 0 3.62 2.11 3.62 4.85V19Z"/>
     </symbol>
-    <symbol id="icon-x" viewBox="0 0 24 24">
-      <path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.5 22H2.3l8.2-9.4L.8 2h6.5l4.4 6.7L18.9 2Zm-1.1 18h1.75L6.3 3.9H4.43L17.8 20Z"/>
+    <symbol id="icon-pdf" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10V4a2 2 0 0 1 2-2h7l5 5v3M14 2v5h5M3 21v-8h2a2 2 0 0 1 0 4H3M10 13v8h1.5a2.5 2.5 0 0 0 2.5-2.5v-3a2.5 2.5 0 0 0-2.5-2.5H10ZM18 21v-8h4M18 17h3"/></g>
+    </symbol>
+    <symbol id="icon-zoom" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 6 6M7 10h6M10 7v6"/></g>
     </symbol>
     <symbol id="icon-cv" viewBox="0 0 24 24">
       <g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 2.2H6a2 2 0 0 0-2 2v15.6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8.7L13.5 2.2Z"/><path d="M13 2.7V9h6.3M8 12h8M8 16h8M8 8h1"/></g>
@@ -46,8 +50,6 @@
         <img class="portrait" src="assets/portrait.png" width="170" height="204" alt="Portrait of Anqi Li">
         <div class="profile-details">
           <h1>Anqi Li <span lang="zh-Hans">李安琪</span></h1>
-          <p class="profile-role">Undergraduate Student</p>
-          <p class="profile-affiliation">Shanghai Jiao Tong University</p>
         </div>
       </div>
 
@@ -56,8 +58,6 @@
         <a href="mailto:starrywiki@sjtu.edu.cn"><svg aria-hidden="true"><use href="#icon-email"/></svg><span>Email</span></a>
         <a href="https://scholar.google.com/citations?user=a7ResPcAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#icon-scholar"/></svg><span>Google Scholar</span></a>
         <a href="https://www.linkedin.com/in/anqi-li-826872384/" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#icon-linkedin"/></svg><span>LinkedIn</span></a>
-        <!-- Replace this span with an anchor when an X / Twitter profile is available. -->
-        <span class="unavailable-link" aria-disabled="true" title="Profile link not provided"><svg aria-hidden="true"><use href="#icon-x"/></svg><span>X / Twitter</span></span>
         <a href="assets/Anqi_Li_CV.pdf" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#icon-cv"/></svg><span>CV</span></a>
       </nav>
     </aside>
@@ -72,18 +72,14 @@
 
       <section id="about" aria-labelledby="about-title">
         <h2 id="about-title">About Me</h2>
-        <p>I am <strong>Anqi Li</strong> (<span lang="zh-Hans">李安琪</span>), an undergraduate studying Computer Science and Technology at <a href="https://en.sjtu.edu.cn/" target="_blank" rel="noopener noreferrer">Shanghai Jiao Tong University</a>, where I am part of the Zhiyuan Honors Program (JOHN Class). I expect to graduate in June 2028.</p>
-        <p>I am currently a research intern at <strong>Microsoft Research Asia</strong>, mentored by Hui Xue, working on multi-agent automated research and synthetic-data strategies. I also conduct research in <strong>Yulun Zhang’s group at SJTU</strong>, focusing on efficient vision-language model inference and multimodal reasoning.</p>
+        <p>I am <strong>Anqi Li</strong> (<span lang="zh-Hans">李安琪</span>), an undergraduate studying Computer Science and Technology at <img class="org-icon" src="assets/logos/sjtu.ico" width="22" height="22" alt="" aria-hidden="true"> <a class="profile-link" href="https://en.sjtu.edu.cn/" target="_blank" rel="noopener noreferrer">Shanghai Jiao Tong University</a>, where I am part of the Zhiyuan Honors Program (JOHN Class). I expect to graduate in June 2028.</p>
+        <p>I am currently a research intern at <img class="org-icon" src="assets/logos/microsoft.svg" width="20" height="20" alt="" aria-hidden="true"> <a class="profile-link" href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/" target="_blank" rel="noopener noreferrer">Microsoft Research Asia</a>, advised by <a class="profile-link" href="https://www.microsoft.com/en-us/research/people/yuhanghe/" target="_blank" rel="noopener noreferrer">Yuhang He</a> and mentored by Hui Xue, working on multi-agent automated research and synthetic-data strategies. I also conduct research in <a class="profile-link" href="https://yulunzhang.com/" target="_blank" rel="noopener noreferrer">Yulun Zhang</a>’s group at <a class="profile-link" href="https://en.sjtu.edu.cn/" target="_blank" rel="noopener noreferrer">SJTU</a>, focusing on efficient vision-language model inference and multimodal reasoning.</p>
         <p>I am interested in making multimodal AI more efficient, capable, and practical. Feel free to reach out at <a href="mailto:starrywiki@sjtu.edu.cn">starrywiki@sjtu.edu.cn</a>.</p>
       </section>
 
       <section id="research" aria-labelledby="research-title">
         <h2 id="research-title">Research Interests</h2>
-        <ul class="research-list">
-          <li><strong>Efficient Vision-Language Models.</strong> Token pruning, reasoning token control, and inference optimization.</li>
-          <li><strong>Multimodal Reasoning.</strong> Complex visual understanding and grounded reasoning in vision-language models.</li>
-          <li><strong>AI Systems.</strong> Multi-agent automated research, synthetic data, and scale-aware evaluation.</li>
-        </ul>
+        <p>My research interests lie in <strong>multimodal intelligence</strong>, <strong>AI agents</strong>, and <strong>data-centric AI</strong>. I am particularly interested in efficient vision-language models and multimodal reasoning, multi-agent systems for automated research, and synthetic data generation and evaluation. My goal is to build capable and efficient AI systems through better models, agents, and data.</p>
       </section>
 
       <section id="publications" aria-labelledby="publications-title">
@@ -93,21 +89,39 @@
         </div>
         <ol class="publication-list">
           <li class="publication">
-            <h3><a href="https://arxiv.org/abs/2610.17530" target="_blank" rel="noopener noreferrer">TwinPrune: Density-Aware Two-Phase Token Pruning for Vision-Language Models</a></h3>
-            <p class="authors">Kai Liu*, <strong>Anqi Li*</strong>, Junxian Li, Zhixin Wang, Zhikai Chen, Renjing Pei, Yulun Zhang</p>
-            <p class="venue">NeurIPS 2026</p>
-            <div class="paper-links" aria-label="TwinPrune resources">
-              <a href="https://arxiv.org/abs/2610.17530" target="_blank" rel="noopener noreferrer">Paper</a>
-              <a href="https://github.com/Kai-Liu001/TwinPrune" target="_blank" rel="noopener noreferrer">Code</a>
+            <div class="publication-media">
+              <span class="conference-tag">NeurIPS</span>
+              <a class="figure-link" href="assets/publications/twinprune.png" data-figure="TwinPrune" target="_blank" rel="noopener" aria-label="Enlarge TwinPrune main figure">
+                <img src="assets/publications/twinprune.png" width="3392" height="1701" loading="lazy" alt="TwinPrune density-guided two-phase compression framework">
+                <span class="figure-hint"><svg aria-hidden="true"><use href="#icon-zoom"/></svg>View figure</span>
+              </a>
+            </div>
+            <div class="publication-body">
+              <h3><a href="https://arxiv.org/abs/2610.17530" target="_blank" rel="noopener noreferrer">TwinPrune: Density-Aware Two-Phase Token Pruning for Vision-Language Models</a></h3>
+              <p class="authors">Kai Liu*, <strong>Anqi Li*</strong>, Junxian Li, Zhixin Wang, Zhikai Chen, Renjing Pei, Yulun Zhang</p>
+              <p class="venue">NeurIPS 2026</p>
+              <div class="paper-links" aria-label="TwinPrune resources">
+                <a href="https://arxiv.org/pdf/2610.17530" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#icon-pdf"/></svg>PDF</a>
+                <a href="https://github.com/Kai-Liu001/TwinPrune" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#icon-github"/></svg>Code</a>
+              </div>
             </div>
           </li>
           <li class="publication">
-            <h3><a href="https://arxiv.org/abs/2605.26038" target="_blank" rel="noopener noreferrer">DRScaffold: Boosting Dense-Scene Reasoning in Lightweight Vision Language Models</a></h3>
-            <p class="authors">Xinrui Shi*, Kai Liu*, Ziqing Zhang, Jianze Li, <strong>Anqi Li</strong>, Yulun Zhang</p>
-            <p class="venue">NeurIPS 2026</p>
-            <div class="paper-links" aria-label="DRScaffold resources">
-              <a href="https://arxiv.org/abs/2605.26038" target="_blank" rel="noopener noreferrer">Paper</a>
-              <a href="https://github.com/irene-shi/DRScaffold" target="_blank" rel="noopener noreferrer">Code</a>
+            <div class="publication-media">
+              <span class="conference-tag">NeurIPS</span>
+              <a class="figure-link" href="assets/publications/drscaffold.png" data-figure="DRScaffold" target="_blank" rel="noopener" aria-label="Enlarge DRScaffold main figure">
+                <img src="assets/publications/drscaffold.png" width="2400" height="1049" loading="lazy" alt="DRScaffold framework for grounded dense-scene multimodal reasoning">
+                <span class="figure-hint"><svg aria-hidden="true"><use href="#icon-zoom"/></svg>View figure</span>
+              </a>
+            </div>
+            <div class="publication-body">
+              <h3><a href="https://arxiv.org/abs/2605.26038" target="_blank" rel="noopener noreferrer">DRScaffold: Boosting Dense-Scene Reasoning in Lightweight Vision Language Models</a></h3>
+              <p class="authors">Xinrui Shi*, Kai Liu*, Ziqing Zhang, Jianze Li, <strong>Anqi Li</strong>, Yulun Zhang</p>
+              <p class="venue">NeurIPS 2026</p>
+              <div class="paper-links" aria-label="DRScaffold resources">
+                <a href="https://arxiv.org/pdf/2605.26038" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#icon-pdf"/></svg>PDF</a>
+                <a href="https://github.com/irene-shi/DRScaffold" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#icon-github"/></svg>Code</a>
+              </div>
             </div>
           </li>
         </ol>
@@ -120,7 +134,7 @@
           <h3 class="subsection-title">Internship</h3>
           <article class="experience">
             <div class="entry-heading"><h4>Microsoft Research Asia</h4><span class="date">Jun. 2026 – Dec. 2026</span></div>
-            <p class="entry-subtitle">Research Intern · Mentor: Hui Xue</p>
+            <p class="entry-subtitle">Research Intern · Advisor: <a href="https://www.microsoft.com/en-us/research/people/yuhanghe/" target="_blank" rel="noopener noreferrer">Yuhang He</a> · Mentor: Hui Xue</p>
             <p>Multi-agent automated research for synthetic data, from hypothesis generation and data synthesis to model training, evaluation, and iterative strategy optimization.</p>
           </article>
           <article class="experience">
@@ -153,5 +167,12 @@
       <footer class="site-footer"><span>© 2026 Anqi Li</span><a href="#about">Back to top</a></footer>
     </main>
   </div>
+  <dialog class="figure-dialog" aria-labelledby="figure-title">
+    <div class="figure-dialog-header">
+      <h2 id="figure-title">Publication figure</h2>
+      <form method="dialog"><button class="close-figure" aria-label="Close figure">Close <span aria-hidden="true">×</span></button></form>
+    </div>
+    <img class="expanded-figure" alt="">
+  </dialog>
 </body>
 </html>
