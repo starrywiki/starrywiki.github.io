@@ -13,6 +13,8 @@
 - `assets/publications/`：论文主图。
 - `scripts/figures.js`：点击论文主图后弹出放大视图，可按 Esc 或点击 Close 关闭。
 - `scripts/profile.js`：点击 WeChat 复制 `wikistarry`，显示复制成功提示。
+- `scripts/hobbies.js`：页脚 Guitar、Skiing 和 Tennis 的点击小效果，遵循系统的减少动态效果设置。
+- `assets/hobbies/`：页脚兴趣图标和相应的开源许可证。
 - `visitor-map.html`：隔离加载访客统计服务，仅显示访问总数和静态地图。
 - `scripts/visitor-map.js`：保留服务商的实际数值和地区，将地图转换为不可点击的静态 SVG 图片。
 
@@ -46,6 +48,10 @@
 
 复制一个 `li.publication` 后修改主图、标题、作者、会议、PDF 和 Code 链接。本人姓名用 `strong` 加粗，共同第一作者用星号标注。主图链接中的 `data-figure` 用于放大视图的标题。
 
+### 页脚兴趣
+
+Background 下方的 “Beyond research” 展示 Guitar、Skiing 和 Tennis。颜色由 `styles.css` 顶部的 `--hobby-accent` 控制，当前为 `#4180bb`。雪山没有圆形背景，向下偏移 3px 以对齐图标底部。点击图标会短暂显示音符、雪痕或网球轻弹，不会自动循环。
+
 ### 访客地图
 
 左栏 CV 下方显示真实的 `数字 Views` 和静态地图，没有动画、日期面板、点击跳转或统计链接。后台统计页供本人管理：<https://mapmyvisitors.com/web/1c9kn>。
@@ -78,5 +84,7 @@ GitHub Pages 使用 `main` 分支根目录。将修改提交并推送到 `main` 
 - TwinPrune 主图：<https://github.com/Kai-Liu001/TwinPrune/blob/main/docs/assets/twinprune_method.png>。
 - DRScaffold 主图：<https://github.com/irene-shi/DRScaffold/blob/main/figs/teaser.png>。
 - 访客地图底图：MapMyVisitors 为本站浅灰陆地、白色背景配置生成的 220px 世界地图，存于 `assets/visitor-worldmap.png`。
+- 页脚吉他、雪山和音符：[Lucide 0.468.0](https://github.com/lucide-icons/lucide)，ISC 许可；主图标线宽调整为 1.25。
+- 页脚网球：[Phosphor Icons 2.1.1](https://github.com/phosphor-icons/core)，MIT 许可。图标和许可均存于 `assets/hobbies/`。
 
 论文排版参考 <https://irene-shi.github.io/> 的“主图、会议信息、作者和资源入口”形式，使用本人论文的图片和作者信息。
