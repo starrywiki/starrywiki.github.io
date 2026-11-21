@@ -9,7 +9,7 @@
 - `index.html`：个人介绍、研究方向、论文、实习、教育、荣誉，以及左侧的社交链接。
 - `styles.css`：排版、字号、颜色和响应式布局。
 - `assets/portrait.jpg`：本人提供的花丛照片，使用 CSS 裁切并将脸部居中。
-- `assets/Anqi_Li_CV.pdf`：本人提供的原始简历，左侧 CV 直接打开此文件。
+- `assets/Anqi_Li_CV.pdf`：本人于 2026-11-21 提供的最新版简历，左侧 CV 直接打开此文件。
 - `assets/publications/`：论文主图。
 - `scripts/figures.js`：点击论文主图后弹出放大视图，可按 Esc 或点击 Close 关闭。
 - `scripts/profile.js`：点击 WeChat 复制 `wikistarry`，显示复制成功提示。
@@ -48,6 +48,8 @@
 
 复制一个 `li.publication` 后修改主图、标题、作者、会议、PDF 和 Code 链接。本人姓名用 `strong` 加粗，共同第一作者用星号标注。主图链接中的 `data-figure` 用于放大视图的标题。
 
+SOAR 位于列表最上方，状态为 “Submitted to CVPR”，作者顺序和共同一作标记与最新版简历一致。标题和 GitHub 按钮均指向 <https://github.com/starrywiki/SOAR>，缩略图使用仓库的 method 图，点击可放大。
+
 ### 页脚兴趣
 
 Background 下方的 “Beyond research” 展示 Guitar、Skiing 和 Tennis。颜色由 `styles.css` 顶部的 `--hobby-accent` 控制，当前为 `#4180bb`。雪山没有圆形背景，向下偏移 3px 以对齐图标底部。点击图标会短暂显示音符、雪痕或网球轻弹，不会自动循环。
@@ -83,6 +85,7 @@ GitHub Pages 使用 `main` 分支根目录。将修改提交并推送到 `main` 
 - Microsoft 标识：本地 SVG，作为机构链接的视觉标识。
 - TwinPrune 主图：<https://github.com/Kai-Liu001/TwinPrune/blob/main/docs/assets/twinprune_method.png>。
 - DRScaffold 主图：<https://github.com/irene-shi/DRScaffold/blob/main/figs/teaser.png>。
+- SOAR method 图：<https://github.com/starrywiki/SOAR/blob/main/assets/fig4_method.png>。
 - 访客地图底图：MapMyVisitors 为本站浅灰陆地、白色背景配置生成的 220px 世界地图，存于 `assets/visitor-worldmap.png`。
 - 页脚吉他、雪山和音符：[Lucide 0.468.0](https://github.com/lucide-icons/lucide)，ISC 许可；主图标线宽调整为 1.25。
 - 页脚网球：[Phosphor Icons 2.1.1](https://github.com/phosphor-icons/core)，MIT 许可。图标和许可均存于 `assets/hobbies/`。
